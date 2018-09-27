@@ -1,0 +1,115 @@
+body{
+    background:  rgb(146, 168, 215);
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul{
+    margin-left: 0px;
+}
+
+li {
+    background-color: rgb(20, 20, 150);
+    color: white;
+    display: inline-block;
+    height: 70px;
+    padding-left: 10px;
+    width: 30%;
+    line-height: 70px;
+    text-align: center;
+}
+
+section{
+    margin-top: 40px;
+}
+
+.button{
+    background-color: rgb(20, 20, 150);
+    color: white;
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    width: 43%;
+}
+
+.button:hover{
+    background-color: rgba(206, 206, 249, 0.94)
+}
+
+.trade-action .front{
+    text-align: center;
+}
+
+
+/* .card{
+    background-color:  rgb(3, 3, 70);
+    color: white;
+    float: left;
+    height: 350px;
+    font-size: 25px;
+    line-height: 200px;
+    margin-left: 40px;
+    text-align: center;
+    width: 225px;
+} */
+
+.trigger {
+    display: none;
+  }
+
+
+  .trade-card {
+    border: 0px;
+    display: inline-block;
+    width: 200px;
+    height: 260px;
+    border: 1px solid #ccc;
+    margin: 40px 40px;
+    perspective: 600px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .trigger {
+    display: none;
+  }
+  
+  .trigger:checked + .card {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background: #000;
+    color: #fff;
+  }
+  
+  .back {
+    background: #eee;
+    color: #000;
+    transform: rotateY(180deg);
+  }
+  
